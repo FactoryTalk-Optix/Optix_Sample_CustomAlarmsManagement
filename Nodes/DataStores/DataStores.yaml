@@ -1,0 +1,117 @@
+Name: DataStores
+Type: DataStoresCategoryFolder
+Children:
+- Name: AlarmsDB
+  Id: g=c95ac06ae4b975144ce99650cb87211e
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: Alarms
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=7;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=7;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=7;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=7;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Id
+          Type: StoreColumn
+          DataType: String
+          Value: "0"
+        - Name: Message
+          Type: StoreColumn
+          DataType: String
+        - Name: Acknowledge
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: Confirm
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: Severity
+          Type: StoreColumn
+          DataType: UInt32
+        - Name: Active
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: ActivationTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: DeactivationTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: AcknowledgeTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: ConfirmTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+  - Class: Reference
+    Target: ns=15;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=7;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=7;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=7;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=7;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=7;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=7;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=7;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=7;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=7;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=7;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=7;i=59
+    Direction: Forward
